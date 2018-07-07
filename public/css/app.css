@@ -10417,9 +10417,8 @@ a.text-dark:focus {
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
 
-body {
-  background: url("http://placehold.it/1920x1080") no-repeat center center fixed;
-  background-size: cover;
-  -o-background-size: cover;
+#map {
+  margin: 0;
+  height: 1080px;
 }
 

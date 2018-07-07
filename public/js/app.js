@@ -13867,7 +13867,8 @@ module.exports = Cancel;
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(12);
-module.exports = __webpack_require__(43);
+__webpack_require__(43);
+module.exports = __webpack_require__(44);
 
 
 /***/ }),
@@ -47379,6 +47380,16 @@ if (false) {
 
 /***/ }),
 /* 43 */
+/***/ (function(module, exports) {
+
+var osmUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+    osmAttrib = '&copy; <a href="http://openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+    osm = L.tileLayer(osmUrl, { minZoom: 50, attribution: osmAttrib });
+var map = L.map('map').setView([18.44989, -69.97568], 14).addLayer(osm);
+L.marker([18.44989, -69.97568]).addTo(map).bindPopup('Plaza de la Bandera').openPopup();
+
+/***/ }),
+/* 44 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
